@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gyan Gupta - Personal Website</title>
+    <!-- Add Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire screen */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Makes the image stay in place during scrolling */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(16, 148, 133, 0.7); /* Dark teal with opacity for readability */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Styling */
+        nav {
+            text-align: center;
+            background-color: rgba(0, 121, 107, 0.7); /* Slightly lighter teal */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffeb3b; /* Yellow on hover */
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 1;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background-color: rgba(0, 77, 64, 0.7); /* Darker teal with opacity */
+            color: white;
+            padding: 10px;
+        }
+
+        /* Social Media Icons */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #00796b; /* Teal color */
+            font-size: 36px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #ffeb3b; /* Yellow on hover */
+        }
+
+        /* About Me Section Styling */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* New sections: Color & Gaming */
+        .color-section, .gaming-section {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .color-section h2, .gaming-section h2 {
+            text-align: center;
+            color: #004d40; /* Dark teal */
+        }
+
+        .color-section p, .gaming-section p {
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            color: #00796b; /* Teal color */
+        }
+
+        /* Form Styling */
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #00796b; /* Greenish border */
+            background-color: #ffffff;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #00796b; /* Teal button */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #004d40; /* Darker teal button on hover */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            /* Header and Navigation */
+            header {
+                padding: 15px 0;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            /* About Section */
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image img {
+                max-width: 150px;
+            }
+
+            .about-text {
+                flex: none;
+                margin-top: 20px;
+            }
+
+            /* Sections and Boxes */
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                padding: 20px;
+                margin: 10px 0;
+            }
+
+            .gaming-section, .color-section {
+                margin-bottom: 20px;
+            }
+
+            /* Contact Section */
+            .contact-info a {
+                font-size: 30px; /* Smaller icons for mobile */
+                margin: 0 10px;
+            }
+
+            /* Form Inputs */
+            form input,
+            form textarea {
+                font-size: 16px;
+            }
+
+            form button {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gyan Gupta</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gaming">Gaming</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="box">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="gy.jpg" alt="Gyan Gupta - Personal Photo">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello, I'm Gyan Gupta, a student with a passion for gaming and programming. Whether I'm grinding through levels or coding new projects, I'm always looking for ways to level up—both in games and real life. Always curious, always learning, and always up for a challenge!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming section -->
+    <section id="gaming" class="gaming-section">
+        <h2>Gaming & Programming</h2>
+        <p>I’m passionate about both gaming and programming. I enjoy exploring different games, understanding their mechanics, and challenging myself to get better. At the same time, I love writing code and building projects—it’s exciting to create something from scratch and see it work. Whether I’m gaming or programming, I’m always learning and having fun.</p>
+    </section>
+
+    <!-- Contact section with form -->
+    <section id="contact">
+        <div class="container">
+            <div class="box">
+                <h2>Contact Me</h2>
+                <p>If you like what I do, don't forget to follow me for more gaming content and cool programming projects.</p>
+                <div class="contact-info">
+                    <!-- Social Media Icons -->
+                    <a href="https://www.instagram.com/it_lonely.boy?igsh=MTN4OXFqdmZmb2o=" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://t.me/Free_guy_st" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://youtube.com/@beatball2007?si=WIF33ODzMekvkTUD" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Gyan Gupta. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
